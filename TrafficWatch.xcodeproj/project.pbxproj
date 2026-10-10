@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	objectVersion = 56;
+	classes = {
+	};
+	objects = {
+
+/* Begin PBXProject section */
+		2A0000012156000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 2A0000012156000000000019 /* Build configuration list for PBXProject "TrafficWatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = 2A0000012156000000000002;
+			productRefGroup = 2A0000012156000000000003;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A0000012156000000000004 /* TrafficWatch */,
+				2A0000012156000000000005 /* FilterExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXGroup section */
+		2A0000012156000000000002 = {
+			isa = PBXGroup;
+			children = (
+				2A0000012156000000000010 /* TrafficWatch */,
+				2A0000012156000000000011 /* FilterExtension */,
+				2A0000012156000000000012 /* Shared */,
+				2A0000012156000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A0000012156000000000003 = {
+			isa = PBXGroup;
+			name = Products;
+			children = (
+				2A0000012156000000000006 /* TrafficWatch.app */,
+				2A0000012156000000000007 /* FilterExtension.appex */,
+			);
+			sourceTree = "<group>";
+		};
+		2A0000012156000000000010 = {
+			isa = PBXGroup;
+			path = TrafficWatch/TrafficWatch;
+			sourceTree = "<group>";
+			children = (
+				2A0000012156000000000020 /* TrafficWatchApp.swift */,
+				2A0000012156000000000021 /* ContentView.swift */,
+				2A0000012156000000000022 /* TrafficWatchModel.swift */,
+				2A0000012156000000000023 /* FilterController.swift */,
+				2A0000012156000000000024 /* OrganizationLookup.swift */,
+				2A0000012156000000000025 /* Info.plist */,
+				2A0000012156000000000026 /* TrafficWatch.entitlements */,
+			);
+		};
+		2A0000012156000000000011 = {
+			isa = PBXGroup;
+			path = TrafficWatch/FilterExtension;
+			sourceTree = "<group>";
+			children = (
+				2A0000012156000000000030 /* FilterDataProvider.swift */,
+				2A0000012156000000000031 /* Info.plist */,
+				2A0000012156000000000032 /* FilterExtension.entitlements */,
+			);
+		};
+		2A0000012156000000000012 = {
+			isa = PBXGroup;
+			path = TrafficWatch/Shared;
+			sourceTree = "<group>";
+			children = (
+				2A0000012156000000000040 /* FlowEvent.swift */,
+				2A0000012156000000000041 /* FlowEventStore.swift */,
+			);
+		};
+/* End PBXGroup section */
+
+/* Begin PBXFileReference section */
+		2A0000012156000000000006 /* TrafficWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0000012156000000000007 /* FilterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0000012156000000000020 /* TrafficWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficWatchApp.swift; sourceTree = "<group>"; };
+		2A0000012156000000000021 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A0000012156000000000022 /* TrafficWatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficWatchModel.swift; sourceTree = "<group>"; };
+		2A0000012156000000000023 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		2A0000012156000000000024 /* OrganizationLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationLookup.swift; sourceTree = "<group>"; };
+		2A0000012156000000000025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2A0000012156000000000026 /* TrafficWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrafficWatch.entitlements; sourceTree = "<group>"; };
+		2A0000012156000000000030 /* FilterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataProvider.swift; sourceTree = "<group>"; };
+		2A0000012156000000000031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2A0000012156000000000032 /* FilterExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FilterExtension.entitlements; sourceTree = "<group>"; };
+		2A0000012156000000000040 /* FlowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowEvent.swift; sourceTree = "<group>"; };
+		2A0000012156000000000041 /* FlowEventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowEventStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXNativeTarget section */
+		2A0000012156000000000004 /* TrafficWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A0000012156000000000050 /* Build configuration list for PBXNativeTarget "TrafficWatch" */;
+			buildPhases = (
+				2A0000012156000000000060 /* Sources */,
+				2A0000012156000000000061 /* Frameworks */,
+				2A0000012156000000000062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A0000012156000000000070 /* PBXTargetDependency */,
+			);
+			name = TrafficWatch;
+			packageProductDependencies = (
+			);
+			productName = TrafficWatch;
+			productReference = 2A0000012156000000000006 /* TrafficWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A0000012156000000000005 /* FilterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A0000012156000000000051 /* Build configuration list for PBXNativeTarget "FilterExtension" */;
+			buildPhases = (
+				2A0000012156000000000063 /* Sources */,
+				2A0000012156000000000064 /* Frameworks */,
+				2A0000012156000000000065 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilterExtension;
+			packageProductDependencies = (
+			);
+			productName = FilterExtension;
+			productReference = 2A0000012156000000000007 /* FilterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+		2A0000012156000000000070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A0000012156000000000005 /* FilterExtension */;
+			targetProxy = 2A0000012156000000000071 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		2A0000012156000000000071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0000012156000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A0000012156000000000005;
+			remoteInfo = FilterExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A0000012156000000000060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0000012156000000000080 /* TrafficWatchApp.swift in Sources */,
+				2A0000012156000000000081 /* ContentView.swift in Sources */,
+				2A0000012156000000000082 /* TrafficWatchModel.swift in Sources */,
+				2A0000012156000000000083 /* FilterController.swift in Sources */,
+				2A0000012156000000000084 /* OrganizationLookup.swift in Sources */,
+				2A0000012156000000000090 /* FlowEvent.swift in Sources */,
+				2A0000012156000000000091 /* FlowEventStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0000012156000000000063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0000012156000000000085 /* FilterDataProvider.swift in Sources */,
+				2A0000012156000000000092 /* FlowEvent.swift in Sources */,
+				2A0000012156000000000093 /* FlowEventStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A0000012156000000000061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0000012156000000000064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A0000012156000000000062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A0000012156000000000065 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXBuildFile section */
+		2A0000012156000000000080 /* TrafficWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000020 /* TrafficWatchApp.swift */; };
+		2A0000012156000000000081 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000021 /* ContentView.swift */; };
+		2A0000012156000000000082 /* TrafficWatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000022 /* TrafficWatchModel.swift */; };
+		2A0000012156000000000083 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000023 /* FilterController.swift */; };
+		2A0000012156000000000000084 /* OrganizationLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000024 /* OrganizationLookup.swift */; };
+		2A0000012156000000000085 /* FilterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000030 /* FilterDataProvider.swift */; };
+		2A0000012156000000000090 /* FlowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000040 /* FlowEvent.swift */; };
+		2A0000012156000000000091 /* FlowEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000041 /* FlowEventStore.swift */; };
+		2A0000012156000000000092 /* FlowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000040 /* FlowEvent.swift */; };
+		2A0000012156000000000093 /* FlowEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0000012156000000000041 /* FlowEventStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin XCBuildConfiguration section */
+		2A00000121560000000000A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A00000121560000000000A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A00000121560000000000A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TrafficWatch/TrafficWatch/TrafficWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TrafficWatch/TrafficWatch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trafficwatch.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A00000121560000000000A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TrafficWatch/TrafficWatch/TrafficWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TrafficWatch/TrafficWatch/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trafficwatch.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A00000121560000000000A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TrafficWatch/FilterExtension/FilterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TrafficWatch/FilterExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trafficwatch.app.filter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A00000121560000000000A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TrafficWatch/FilterExtension/FilterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+			INFOPLIST_FILE = TrafficWatch/FilterExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trafficwatch.app.filter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A0000012156000000000019 /* Build configuration list for PBXProject "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A00000121560000000000A0 /* Debug */,
+				2A00000121560000000000A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A0000012156000000000050 /* Build configuration list for PBXNativeTarget "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A00000121560000000000A2 /* Debug */,
+				2A00000121560000000000A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A0000012156000000000051 /* Build configuration list for PBXNativeTarget "FilterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A00000121560000000000A4 /* Debug */,
+				2A00000121560000000000A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+}
